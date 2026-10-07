@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "book_id": "sandhill",
+  "title": "等我的小山堆好",
+  "brief": {"age_range": "3—5岁", "languages": ["zh"], "body_page_count": 8},
+  "format": {"width_mm": 240, "height_mm": 240, "margin_mm": 10, "font_size_pt": 28, "line_spacing": 1.35, "text_ratio": 0.22},
+  "approvals": {
+    "brief": "用户已确认3—5岁、中文单语、3本各10页、PDF和HTML。",
+    "story": "用户授权优化三个完整作品；本书八页正文与页框已由主线程统一，丰富等待反应、石子准备及共同游戏。",
+    "visual": "用户授权实际重绘及新版本交付；沿用既有身份、水彩、唯一蓝铲、宽圆顶小山和干沙沟。"
+  },
+  "visual": {
+    "description": "透明水彩、冷白棉纸细纹、颜料自然晕边、轻微不规则轮廓，柔和午后光，清楚的表情与动作。横版插画保持完整比例，书页为方形；无图中文字。",
+    "palette": ["草绿", "灰蓝", "暖米沙色", "柔白"],
+    "reference": "references/identity.png"
+  },
+  "characters": {
+    "tuantuan": {"description": "圆滚滚的小刺猬团团：奶油浅棕脸腹，深棕短柔刺，黑圆眼、小鼻子；草绿色围巾结在角色左侧。两只前爪、两只后脚。", "reference": "references/identity.png"},
+    "rabbit": {"description": "灰毛小兔：奶白肚皮，灰色长耳内侧淡粉，黑圆眼，不穿衣服；略高于团团。两只前爪、两只后脚。", "reference": "references/identity.png"}
+  },
+  "scenes": {"sandgarden": {"description": "安全平坦的午后小花园沙地，暖米沙色，草地围边，左后方白雏菊，右后方灰色扁平椭圆石头。镜头变化保持合理空间关系。", "reference": "references/identity.png"}},
+  "props": {
+    "shovel": {"description": "唯一一把蓝色短柄儿童沙铲。", "initial_state": "团团握着蓝色小铲子。"},
+    "sandhill": {"description": "沙地左侧的小沙山，逐步堆成圆圆的山尖。", "initial_state": "小沙山尚未堆完，山尖缺一小撮沙。"},
+    "pebbles": {"description": "草地边几颗灰色圆滑小石子，用来摆游戏小河的岸边。", "initial_state": "小石子散在草地边。"}
+  },
+  "page_order": ["cover", "page-01", "page-02", "page-03", "page-04", "page-05", "page-06", "page-07", "page-08", "backcover"],
+  "pages": [
+    {
+      "id": "cover", "kind": "cover", "scene_id": "sandgarden", "character_ids": ["tuantuan", "rabbit"], "depends_on": [],
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,1], "text_box": [0.04,0.05,0.74,0.24], "allow_overlap": true, "text_align": "left", "font_size_pt": 44, "text_color": "#5D4B39", "paper_color": "#FFF9EF"},
+      "purpose": "以正在堆的小山和走来的小兔介绍故事，书名拥有真实留白。",
+      "action": "团团在下部用蓝铲添沙，小兔从右边走来，看向蓝铲。",
+      "image": {"path": "images/cover-v4.png", "input_fingerprint": "76ceff01d355e8cf2a5b996bda38cdb6390e3039eed15bb25607b782f20f2dca", "generator": "image_gen", "references": ["images/cover-v4-candidate2.png", "images/page-05-v4.png"]},
+      "qa": {"input_fingerprint": "76ceff01d355e8cf2a5b996bda38cdb6390e3039eed15bb25607b782f20f2dca", "image_sha256": "65ca45dc57f3ec1fd26597b62228c888eea8e1ce69c598254e3f6348ec973eb2", "reviewer": "修订助手实际查看最后局部精修并对照第5页", "notes": "封面最终蓝铲握环远端为明显斜向平直握杆，杆在前爪右侧实际露出，两端圆角向铲柄收窄，内孔也有直边，与第5页D形一致，只有一把蓝铲，爪接触自然。团团专注添沙，灰兔从右侧走来望铲，绿围巾左结、兔无衣服、未完成小山、草地雏菊和右后灰扁石保留。两角色耳脚与合理四肢完整，上方三分之一实际清空，书名框没有图像干扰。纸纹薄水彩和柔午后光连续，无画中文字、水或沟。", "checks": {"identity": true, "continuity": true, "text_match": true, "anatomy": true, "style": true, "composition": true}},
+      "visual_evidence": ["团团绿色围巾", "灰兔无衣服", "唯一蓝铲D形握把", "未完成小山", "左上书名留白"],
+      "text": {"zh": "等我的小山堆好"}, "continuity": {},
+      "prompt": "用途：precise-object-edit，原创绘本封面蓝铲握把最后局部修正，无字正方形。参考1 cover-v4-candidate2为完整保留的底图；参考2 page-05-v4仅提供已经正确的D形握把。必须把底图团团爪处的完整椭圆环改为参考2同形的圆角D形：最远离铲柄的一边是明显平直握杆，两端以圆角收窄，内孔也有平直边。把握环方向稍转，让平直握边在前爪两侧实际露出来，不能被整只爪完全遮住，也不能再次保留圆环；前爪仍自然握住这段直边。蓝色、铲子位置、短柄、矩形铲头和大小保持，只有一把铲。其余团团和兔的身份、姿势、表情、围巾、沙山、花园、纸纹、水彩、光色及上方三分之一书名空白全部保持底图不变，不新增任何文字、水、肢体或物件。"
+    },
+    {
+      "id": "page-01", "kind": "story", "scene_id": "sandgarden", "character_ids": ["tuantuan"], "depends_on": [],
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,0.76], "text_box": [0.03,0.80,0.94,0.18], "text_align": "left", "text_color": "#5D4B39", "paper_color": "#FFF9EF"},
+      "purpose": "建立团团自己的愿望与正在进行的行动。",
+      "action": "团团独自在沙地堆小山，用蓝色沙铲把少量沙放到小山上。",
+      "visual_evidence": ["唯一蓝铲在团团爪中", "小沙山尚未完成", "团团专注开心"],
+      "text": {"zh": "团团想堆一座小山。\n铲一铲，拍一拍。"},
+      "continuity": {"shovel": {"before": "团团握着蓝色小铲子。", "after": "团团握着蓝色小铲子。"}, "sandhill": {"before": "小沙山尚未堆完，山尖缺一小撮沙。", "after": "小沙山尚未堆完，山尖缺一小撮沙。"}},
+      "prompt": "生成新的儿童绘本第1页插画，横版4:3，无文字。严格沿用附图小刺猬团团的身份和水彩纸感，但本页只出现团团，不出现小兔。团团蹲在沙地左侧，用右前爪握唯一蓝色小沙铲，把一小撮沙轻轻添到未完成的小山上；左前爪在小山侧轻轻拍沙，两个前爪用途分明，无额外爪。山尖还缺一点，表情专注而开心。镜头中景，主体较大；草地边白雏菊和灰色扁石作为轻淡背景。草绿色围巾结保持在团团左侧，透明水彩薄涂、柔和午后光、白纸纹与温柔米沙色。不要文字、气泡、第二把铲子、完成的河流、多余角色、分格。",
+      "image": {"path": "images/page-01.png", "input_fingerprint": "598954917f6cedddb44e368bb238d4a1ffedd8c9f73c8d132011cf4874a8d86a", "generator": "image_gen", "references": ["references/identity.png"]},
+      "qa": {"input_fingerprint": "598954917f6cedddb44e368bb238d4a1ffedd8c9f73c8d132011cf4874a8d86a", "image_sha256": "74592fda296cc6bf282f72044597192171271127ad8d5124c2a9809690afe7e3", "reviewer": "主创助手逐图查看", "notes": "已看第1页：团团独自添沙和拍沙，蓝铲有沙、两前爪分工清楚，无兔或多余肢体；绿围巾、白雏菊及右后扁石延续基准，纸纹晕染自然，动作可读且无画中正文。", "checks": {"identity": true, "continuity": true, "text_match": true, "anatomy": true, "style": true, "composition": true}}
+    },
+    {
+      "id": "page-02", "kind": "story", "scene_id": "sandgarden", "character_ids": ["tuantuan", "rabbit"], "depends_on": [],
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,0.76], "text_box": [0.03,0.80,0.94,0.18], "text_align": "left", "text_color": "#5D4B39", "paper_color": "#FFF9EF"},
+      "purpose": "提出小兔的愿望，与团团正在做的事产生小冲突。",
+      "action": "小兔从右侧草地来到沙地，指向空沙地，请团团借铲子。",
+      "visual_evidence": ["小兔来到右侧", "小兔指向尚无小河的空沙地", "蓝铲仍在团团爪中"],
+      "text": {"zh": "小兔跑来了。\n“借我小铲子好吗？我想挖条小河。”"},
+      "continuity": {"shovel": {"before": "团团握着蓝色小铲子。", "after": "团团握着蓝色小铲子。"}},
+      "prompt": "生成新的儿童绘本第2页插画，横版4:3，无文字。参考图锁定绿色围巾小刺猬团团和无衣服灰兔身份及纸纹水彩风格。中远景：团团在左边未完成的小沙山旁，仍握唯一蓝色短柄沙铲；灰兔从右边草地来到沙地，微笑期待，一只前爪指向旁边尚未挖过的空沙地。两者视线相接，清楚表达请求而无争抢。山尖缺一点沙，没有真实河水或沟渠。少量灰圆石子仍在草地边，背景锚点为左后雏菊、右后灰扁石。温柔午后光、透明水彩、自然晕染、冷白纸面留白。不要任何文字或气泡、第二把铲子、多余角色和异常肢体。",
+      "image": {"path": "images/page-02.png", "input_fingerprint": "9c4c69a6bbfd41847a878d421c0b9047788ac7baac7a6aa57aca45132954d2bb", "generator": "image_gen", "references": ["references/identity.png"]},
+      "qa": {"input_fingerprint": "9c4c69a6bbfd41847a878d421c0b9047788ac7baac7a6aa57aca45132954d2bb", "image_sha256": "71f0a028b2d16d522f1146112d72a2457ffc204d621b1f5060bd9dea32087a8a", "reviewer": "主创助手逐图查看", "notes": "已看第2页：灰兔站右侧并指向空沙地，团团持唯一蓝铲；画面没有小河或水，石子仍散在边缘。两位表情温和、前后爪无融合，绿围巾与灰兔身份、水彩纸纹和背景锚点保持连续。", "checks": {"identity": true, "continuity": true, "text_match": true, "anatomy": true, "style": true, "composition": true}}
+    },
+    {
+      "id": "page-03", "kind": "story", "scene_id": "sandgarden", "character_ids": ["tuantuan", "rabbit"], "depends_on": [],
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,1], "text_box": [0.04,0.04,0.62,0.24], "allow_overlap": true, "text_align": "left", "text_color": "#5D4B39", "paper_color": "#FFF9EF"},
+      "purpose": "团团温和协商，小兔开始体验等待。",
+      "action": "团团蹲在未完成小山旁开口协商，握着蓝铲；小兔收回前爪，稍显失落而没有被训斥。",
+      "image": {"path": "images/page-03-v4.png", "input_fingerprint": "884e5986d2c87b56f0a203c5810f6f45585801bd90c3b3af7cc6121e5eb1c50e", "generator": "image_gen", "references": ["images/page-03-v4-candidate1.png", "images/page-07-v2.png"]},
+      "qa": {"input_fingerprint": "884e5986d2c87b56f0a203c5810f6f45585801bd90c3b3af7cc6121e5eb1c50e", "image_sha256": "75107df13c2574dc8c8d1c4fc5dea11cf33cc267d478c1d9e18acd93770d1eea", "reviewer": "修订助手逐图实看，主线程独立复核", "notes": "精修后团团脸低下、黑眼看向左爪旁未完成山体，嘴微张且温和；蓝铲仍归团团，握环直边在握爪后，露出的两侧轮廓与第5页D形握把相容。兔两爪收腹前、表情安静，没有训斥、推挡或争抢。山未拍圆，没有沟和水。身份、绿围巾左结、灰兔无衣服、完整长耳和自然四肢连续。上方与左上正文区域实际为空白，透明水彩纸纹、雏菊和右后扁石保持，无画中字。", "checks": {"identity": true, "continuity": true, "text_match": true, "anatomy": true, "style": true, "composition": true}},
+      "visual_evidence": ["团团看未完成小山", "温和开口", "蓝铲未转交", "小兔收回前爪", "左上文字留白"],
+      "text": {"zh": "团团看看小山。\n“等我的小山堆好，就借给你，好吗？”"},
+      "continuity": {"shovel": {"before": "团团握着蓝色小铲子。", "after": "团团握着蓝色小铲子。"}, "sandhill": {"before": "小沙山尚未堆完，山尖缺一小撮沙。", "after": "小沙山尚未堆完，山尖缺一小撮沙。"}},
+      "prompt": "用途：precise-object-edit，原创3—5岁绘本第3页局部精修，无字正方形。参考1 page-03-v4-candidate1是底图，参考2旧page-07-v2只给蓝铲D形握把轮廓。只修两处精确细节，其余整图保留：一，将团团握的唯一蓝铲完整圆环改成明显远端平直握边、两端圆角向短柄收窄的D形环，内孔也有直边，与参考2同形，保持蓝色、铲柄铲头和爪接触位置；二，将团团脸稍低下、黑眼的视线明确落向自己左爪旁未完成山顶，仍微张嘴温和说话，不变怒脸。未完成小山不增加缺口或沟；右侧灰兔、前爪收在腹前和安静表情、完整长耳、绿围巾左结、两角色位置、上方正文留白、草地雏菊扁石、透明水彩纸纹光色全部保持。没有第二铲、额外肢体、文字气泡、水或水印。"
+    },
+    {
+      "id": "page-04", "kind": "story", "scene_id": "sandgarden", "character_ids": ["tuantuan", "rabbit"], "depends_on": [],
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,1], "text_box": [0.04,0.09,0.40,0.34], "allow_overlap": true, "text_align": "left", "text_color": "#5D4B39", "paper_color": "#FFF9EF"},
+      "purpose": "等待中有温和的小失落，小兔自己发现可以做的事。",
+      "action": "小兔右下坐着，耳朵稍垂，脚尖旁有浅沙痕，低头发现草边圆石；团团在右后继续堆山。",
+      "image": {"path": "images/page-04-v4.png", "input_fingerprint": "581941c456bae203bb0bae1413b7cd4df24c53181cab9d23c9bca7d3e6e6ec77", "generator": "image_gen", "references": ["references/identity.png", "images/page-07-v2.png"]},
+      "qa": {"input_fingerprint": "581941c456bae203bb0bae1413b7cd4df24c53181cab9d23c9bca7d3e6e6ec77", "image_sha256": "00d219ce73835389b164baa2b21df47458a5d3f54d53a2748065047ba4340651", "reviewer": "修订助手实际逐图查看", "notes": "已看新等待页：灰兔右下坐着，两爪放膝、两脚向前，左耳末端明显垂下，安静嘴角与低向左侧圆石的眼神有温和失落和发现；脚旁有浅弧沙痕。团团右后仍握唯一蓝铲添沙，绿围巾左结、兔无衣服与粉耳连续，无沟或水。蓝铲远景可见有直边的握环轮廓。左上与左中实际为空白，文字框没有角色或花草，水彩纸纹和四肢自然，画面无字。", "checks": {"identity": true, "continuity": true, "text_match": true, "anatomy": true, "style": true, "composition": true}},
+      "visual_evidence": ["小兔耳朵稍垂", "脚旁浅沙痕", "兔眼看圆石", "远处团团仍持蓝铲", "左侧正文留白"],
+      "text": {"zh": "小兔等呀等。\n咦，那颗石子真圆！"},
+      "continuity": {"shovel": {"before": "团团握着蓝色小铲子。", "after": "团团握着蓝色小铲子。"}, "pebbles": {"before": "小石子散在草地边。", "after": "小石子散在草地边。"}},
+      "prompt": "原创3—5岁绘本第4页，无字正方形1:1，是等待情绪代表页。identity锁定灰兔無衣服、团团绿围巾和童真透明水彩；旧page-07-v2只参考蓝铲D形环。左侧44%宽、上至中部46%高为连续浅纸色空白，必须没有花草、角色或石头，供正文。右下较大的灰兔坐在草边沙地，两前爪轻放膝上、双脚自然向前，一脚尖旁有一小道蹭沙弧痕；灰长耳根部仍竖而末端稍垂、嘴角安静，温和小失落，沒有被训斥或哭泣。兔低头朝左下草边独立清楚的浅灰圆滑石子，黑眼有发现时亮意，奶白腹、粉耳、同样年龄比例。团团在右后远处较小，绿围巾左结，仍握唯一蓝铲给同一未完成小山添沙；换机位而非移山。右后灰扁石作场景锚点。蓝铲短柄、圆角三角/D形环远端平直，不复制。冷白棉纸纹、自然水彩晕边、草绿灰蓝米沙、柔午后光，兔耳脚完整、合理四肢。无沟、水、石子队伍、文字气泡、水印或第三角色。"
+    },
+    {
+      "id": "page-05", "kind": "story", "scene_id": "sandgarden", "character_ids": ["tuantuan", "rabbit"], "depends_on": [],
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,1], "text_box": [0.56,0.04,0.40,0.31], "allow_overlap": true, "text_align": "left", "text_color": "#5D4B39", "paper_color": "#FFF9EF"},
+      "purpose": "小兔主动准备材料，为末尾共玩埋下图画伏笔。",
+      "action": "小兔在右侧比较大小不同的灰石并排成短备料队伍；团团左后继续堆山。",
+      "image": {"path": "images/page-05-v4.png", "input_fingerprint": "e2fd8b174a0e6cd7eb5fb64499351a807cd44515597d1aa0ad920afe4d270003", "generator": "image_gen", "references": ["images/page-05-v4-candidate1.png", "images/page-07-v2.png"]},
+      "qa": {"input_fingerprint": "e2fd8b174a0e6cd7eb5fb64499351a807cd44515597d1aa0ad920afe4d270003", "image_sha256": "33e6703cdadca03dac800611dbeb2a9f9d450d63b6a14ad22424a50459153d2e", "reviewer": "修订助手逐图实看，主线程独立复核", "notes": "灰兔前景一爪抱灰石、一爪触地面首颗灰石，右下备料灰石大小不同且排成短队伍，长耳扬起、低头专注。没有沙沟、河岸或水，团团仍在未完成小山旁持唯一蓝铲。握把远端有清楚斜向平直边，内孔同样带直边，为D形而非圆环。绿围巾左结、无衣服灰兔、四肢和纸纹水彩连续；右上文字位置实际为空白，兔耳处于正文使用位置下方，无画中字。", "checks": {"identity": true, "continuity": true, "text_match": true, "anatomy": true, "style": true, "composition": true}},
+      "visual_evidence": ["灰兔比较石子", "右侧大小不同灰石排队", "兔耳扬起", "团团仍握蓝铲", "无沙沟", "右上正文留白"],
+      "text": {"zh": "小兔找来小石子。\n圆的，大的，小小的，都排好队。"},
+      "continuity": {"shovel": {"before": "团团握着蓝色小铲子。", "after": "团团握着蓝色小铲子。"}, "pebbles": {"before": "小石子散在草地边。", "after": "小兔把几颗大小不同的灰色圆滑石子排在沙地右侧备料处。"}},
+      "prompt": "用途：precise-object-edit，原创3—5岁绘本第5页唯一蓝铲握环局部修正，无字正方形。参考1 page-05-v4-candidate1是必须保留的底图；参考2旧page-07-v2只提供D形握环。只将团团爪处蓝铲的圆环改成带明显平直远端握边的圆角三角/D形环，直边两端以圆角向短柄收窄，内孔也有对应直边，不是圆或椭圆。随原铲角度旋转，前爪自然握边；保留蓝色、整把铲的位置大小、短柄与矩形铲头，不移动或复制。其余人物位置表情、团团绿围巾左结、灰兔无衣服与扬起长耳、兔两爪分别抱石和触地石、同一批灰石大小数量及右下备料队伍、未完成小山、右上真实正文留白、雏菊扁石、透明水彩纸纹与光色全部完整保持。仅一把蓝铲，无水沙沟、文字气泡、水印、额外肢体或新道具。"
+    },
+    {
+      "id": "page-06", "kind": "story", "scene_id": "sandgarden", "character_ids": ["tuantuan", "rabbit"], "depends_on": ["page-05"],
+      "presentation": {"layout": "positioned", "image_box": [0,0.20,1,0.76], "text_box": [0.03,0,0.94,0.16], "text_align": "left", "text_color": "#5D4B39", "paper_color": "#FFF9EF"},
+      "purpose": "团团完成愿望，小兔的石子准备也完成了。",
+      "action": "团团轻拍宽圆弧山顶，另一爪握蓝铲；右后灰兔检查已排好的石子。",
+      "image": {"path": "images/page-06-v4.png", "input_fingerprint": "260575c5461fc54df603e20d3ed70b83e9c492ec11e4c93895b51d8292f25fbe", "generator": "image_gen", "references": ["images/page-06-v4-candidate1.png", "images/page-05-v4.png"]},
+      "qa": {"input_fingerprint": "260575c5461fc54df603e20d3ed70b83e9c492ec11e4c93895b51d8292f25fbe", "image_sha256": "6d20fc6df77408a45ae5e3a54fff264e09ebd8cab666d5b77cbf858f3932e0fa", "reviewer": "修订助手实际逐图查看并对照第5页", "notes": "已看完成页及石子局部精修：团团左爪掌心贴在宽圆山顶左侧，圆弧大部分轮廓可见，没有尖锥或缺口；右爪握唯一蓝铲，铲头停山左侧，握边在爪后但外轮廓与D形相容。兔低头蹲着、一爪扶石检查备料，修正后原怀中灰石放在两爪前，右侧短队伍共五颗大小不同灰石，与第5页四颗地面加一颗怀中石一致，没有河岸、沟和水。绿围巾左结、灰兔无衣服、完整耳与自然四肢、纸纹水彩及花园锚点连续，画面无字，横图完整供独立顶部文字排版。", "checks": {"identity": true, "continuity": true, "text_match": true, "anatomy": true, "style": true, "composition": true}},
+      "visual_evidence": ["宽圆弧完整钝顶", "团团轻拍圆顶", "蓝铲仍归团团", "第5页石子队伍仍在右侧", "灰兔检查备料"],
+      "text": {"zh": "最后，轻轻拍一下。\n“我的小山堆好啦！”"},
+      "continuity": {"shovel": {"before": "团团握着蓝色小铲子。", "after": "团团握着蓝色小铲子。"}, "sandhill": {"before": "小沙山尚未堆完，山尖缺一小撮沙。", "after": "小沙山堆好了，山尖圆圆的。"}},
+      "prompt": "用途：precise-object-edit，原创绘本第6页石子数量连续性的单处修正，无字横版4:3。参考1 page-06-v4-candidate1是必须完整保留的底图；参考2 page-05-v4提供原备料，共四颗地面灰石加兔怀中的一颗灰石。底图目前兔旁地面只有四颗，请仅在这一短队伍旁补回原来兔怀中那一颗中等大小圆滑灰石，使备料总共五颗，颜色大小与参考2怀中那颗一致，不额外增加。新石子放在兔两前爪之间偏前的沙面，与现有四颗石子分开可见，不遮挡爪，不放在沙山上，不变成河岸。除此之外底图所有部分保持：团团左爪轻拍明确宽圆弧山顶，右爪握唯一蓝铲且D形握边在爪后；团团绿围巾左结、兔灰毛奶白腹粉耳与检查姿势、雏菊右后灰扁石、未有沟和水、透明水彩纸纹、光色和镜头完全不变。无文字、第二工具、异常肢体或密集新石子。"
+    },
+    {
+      "id": "page-07", "kind": "story", "scene_id": "sandgarden", "character_ids": ["tuantuan", "rabbit"], "depends_on": ["page-05", "page-06"],
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,1], "text_box": [0.04,0.04,0.88,0.20], "allow_overlap": true, "text_align": "left", "text_color": "#5D4B39", "paper_color": "#FFF9EF"},
+      "purpose": "团团兑现约定，小兔的主动准备得到回应。",
+      "action": "团团递唯一蓝铲，小兔前倾接住D形握把，原石子队伍在右后。",
+      "image": {"path": "images/page-07-v4.png", "input_fingerprint": "193cc4a6d9ddf341cc53abb6e9f6799d81d12cef6bdaae63b432006ab332866b", "generator": "image_gen", "references": ["references/identity.png", "images/page-06-v4.png", "images/page-05-v4.png"]},
+      "qa": {"input_fingerprint": "193cc4a6d9ddf341cc53abb6e9f6799d81d12cef6bdaae63b432006ab332866b", "image_sha256": "a60fa935e867f24475fd9abf164976a31436aa9bef00bbc6b257159101159893", "reviewer": "修订助手实际逐图查看与第5、6页对照，并按原分辨率复核", "notes": "交接时团团两爪扶铲头和柄侧，兔一爪接握把底部、另一爪靠胸，唯一蓝铲接触点独立，无争抢。D形环远端直边、圆角及收窄连接、内孔同形清楚；兔前倾开心，围巾左结、无衣服灰兔、耳脚和水彩连续。左后完成山为宽圆弧顶。右后备料可明确辨认三颗完整石及靠兔右侧身后的部分石子，队伍靠兔身体的一端被遮挡，无法从本页独立数全五颗，因此不对本页给出五颗均可见的数量结论；第5、6页与后续共玩页核对材料去向。无沙沟、水或河岸，上方实际正文位置空白，无画中字。", "checks": {"identity": true, "continuity": true, "text_match": true, "anatomy": true, "style": true, "composition": true}},
+      "visual_evidence": ["唯一蓝铲交接接触清楚", "D形握把", "小兔前倾", "左后完成圆顶小山", "右后石子备料", "上方正文留白"],
+      "text": {"zh": "“给你！”团团说。\n“我也准备好啦！”小兔说。"},
+      "continuity": {"shovel": {"before": "团团握着蓝色小铲子。", "after": "小兔接过了唯一的蓝色小铲子。"}},
+      "prompt": "原创3—5岁绘本第7页，无字正方形1:1。identity锁定角色水彩；新版第6页锁定完成宽圆顶小山、蓝铲和灰石备料，新版第5页补充灰石大小排列。上方24%高、4%至92%宽保持浅棉纸空白，无花叶、云、耳朵或物件，供正文。中下近景，团团左、灰兔右。团团奶油棕脸腹、短棕柔刺、绿围巾左结，微笑横着递唯一蓝铲，前爪扶铲头近柄侧边；兔灰毛奶白腹、粉长耳、无衣服，身体积极前倾，双脚自然落地，一前爪已接住右向D形握把，另一爪靠胸前，开心眼神看铲。双方接触点独立明确，不争抢、多爪或悬浮铲。蓝铲短柄、圆角三角/D形环，远端平直握边、内孔同形，不能圆环。左后原处宽圆顶完成小沙山，右后同批灰石短备料队伍。无沟无水。淡草地雏菊和扁石锚点，透明水彩薄涂、冷白纸纹、自然晕边、草绿灰蓝米沙、柔午后光。仅两角色、合理四肢，无第二铲、文字气泡或水印。"
+    },
+    {
+      "id": "page-08", "kind": "story", "scene_id": "sandgarden", "character_ids": ["tuantuan", "rabbit"], "depends_on": ["page-05", "page-07"],
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,1], "text_box": [0.04,0.04,0.88,0.20], "allow_overlap": true, "text_align": "left", "text_color": "#5D4B39", "paper_color": "#FFF9EF"},
+      "purpose": "等待准备的石子成为共同游戏，小河连到团团的小山。",
+      "action": "俯视中小兔用蓝铲挖绕到山脚的干沙沟，团团用原备料石子摆河岸，右侧剩少量未摆灰石。",
+      "image": {"path": "images/page-08-v4.png", "input_fingerprint": "dc899b2303b67a34c5cdbfa694beb2a4c74abdfedc92166e46d9959f2eb89e3d", "generator": "image_gen", "references": ["references/identity.png", "images/page-07-v4.png", "images/page-05-v4.png"]},
+      "qa": {"input_fingerprint": "dc899b2303b67a34c5cdbfa694beb2a4c74abdfedc92166e46d9959f2eb89e3d", "image_sha256": "df3adb27dee81d9948655e37bbf59558068a612ada2912cf6be5197ac0bbb1c4", "reviewer": "修订助手实际逐图查看并逐颗对照备料", "notes": "共玩页五颗备料全部可辨：沟边三颗已摆好，团团一爪按着第四颗正放到队伍末端，兔右侧单独剩第五颗；灰色圆石大小有变化，兑现第5页比较和排队准备。团团另一爪支地，小兔两爪握唯一蓝铲，D形环远端直边完整可见，铲头确实接触沟端干沙。浅沟从右下转到圆顶小山脚，沙色无水，山顶为宽圆弧无缺口。两位身份、绿围巾左结、粉兔耳、合理四肢、水彩纸纹保持，顶部实际正文位置为空白，无字或第二铲。", "checks": {"identity": true, "continuity": true, "text_match": true, "anatomy": true, "style": true, "composition": true}},
+      "visual_evidence": ["蓝铲由兔握持接触沙面", "山脚弯曲干沙沟", "团团摆原灰石备料", "宽圆顶小山", "上方文字留白"],
+      "text": {"zh": "小兔挖小河，团团摆小石子。\n“小河弯到你的小山啦！”"},
+      "continuity": {"shovel": {"before": "小兔接过了唯一的蓝色小铲子。", "after": "小兔握着蓝铲挖弯曲的浅沙沟。"}, "pebbles": {"before": "小兔把几颗大小不同的灰色圆滑石子排在沙地右侧备料处。", "after": "原备料石子被团团排在浅沙沟旁，少量仍在右侧备料处。"}},
+      "prompt": "原创3—5岁绘本第8页，无字正方形1:1。identity锁定团团绿围巾、灰兔無衣服和水彩；新版第7页锁定兔持有唯一蓝铲、宽圆顶小山，新版第5页锁定同批大小不同灰石。上方24%高、4%至92%宽为浅纸色空白，无云树耳朵石头，供正文。中下略高俯视开阔场面，完成小山左中原处、宽圆弧钝顶无尖无缺口；一条米沙色干浅沟从右下弯到山脚，没有真实水或蓝色河流。右侧灰兔蹲着握唯一蓝铲，在沟右端挖沙，铲头明确接触干沙，短柄圆角三角/D形握环远端平直。左前团团蹲下、一前爪正把原备料中的一颗灰圆石放到沟岸末端、另一前爪支地，绿围巾左结。同一批备料总共五颗：岸边已经摆好三颗，团团爪下正在放第四颗，兔右侧备料处只剩第五颗，五颗分别清楚可见，大小对应第5页，不添加密集石环或新的散落灰石。两朋友看各自动作、开心，山沟的连接和分工一眼可读。草地雏菊远灰扁石轻淡、透明水彩棉纸纹、自然晕边、柔午后光连续。关键爪和接触点可辨，合理四肢，无第二铲、沙堡、河水、文字气泡、水印。"
+    },
+    {
+      "id": "backcover", "kind": "backcover", "scene_id": "sandgarden", "character_ids": ["tuantuan", "rabbit"], "depends_on": ["page-08"],
+      "presentation": {"layout": "image-only", "paper_color": "#FFF9EF"},
+      "purpose": "无字安静收束，两朋友坐看共同的小天地。",
+      "action": "两朋友右侧并肩坐看小山与干沙沟，蓝铲放在兔旁，原灰石形成短河岸。",
+      "image": {"path": "images/backcover-v4.png", "input_fingerprint": "ceb85fbc65d7733bedd0b65a2bad26cb027ed0a69325773f41d6dbbcd391bea4", "generator": "image_gen", "references": ["images/backcover-v4-candidate1.png", "images/page-07-v4.png"]},
+      "qa": {"input_fingerprint": "ceb85fbc65d7733bedd0b65a2bad26cb027ed0a69325773f41d6dbbcd391bea4", "image_sha256": "27f9c4c8354a93c627d02498bf17c4367ba1ae81a20abaa8fde67569edf7187b", "reviewer": "修订助手实际逐图查看并与第8页及第7页D形环对照", "notes": "无字封底四颗大小不同灰石沿干沟形成短河岸，兔右侧单独留第五颗，五颗均可见，兑现准备材料且没有密集新石环。两位并肩侧背影看小世界，团团绿围巾左结、灰兔无衣服和白尾可辨，身体耳部与可见肢体自然。完成小山为宽圆弧钝顶，沙沟弯到山脚且无水；唯一蓝铲平放兔旁，局部精修后的握环远端斜直边及同形内孔可見，随放地角度转向。傍晚稍暖的光、水彩透明层、纸纹、花园锚点和完整方形画幅保留，没有正文或画中字。", "checks": {"identity": true, "continuity": true, "text_match": true, "anatomy": true, "style": true, "composition": true}},
+      "visual_evidence": ["两位侧背影", "团团绿围巾与灰兔白尾", "宽圆顶小山", "无水浅沟", "同批灰石河岸", "唯一蓝铲D形环在兔旁", "全页无字"],
+      "text": {"zh": ""},
+      "continuity": {"shovel": {"before": "小兔握着蓝铲挖弯曲的浅沙沟。", "after": "蓝色小铲子放在小兔身边的沙地上。"}, "pebbles": {"before": "原备料石子被团团排在浅沙沟旁，少量仍在右侧备料处。", "after": "四颗备料石子排在浅沙沟旁，第五颗仍在小兔右侧。"}},
+      "prompt": "用途：precise-object-edit，原创绘本无字封底唯一蓝铲握环局部修正，正方形1:1。参考1 backcover-v4-candidate1为全部保留的底图；参考2 page-07-v4只提供同一蓝铲已经清楚正确的D形握环。仅把底图右下平放蓝铲的完整椭圆握环改为参考2同形的圆角三角/D形环：最远离铲柄的一边必须是明显斜向平直握边，不是弧线，直边两端圆角向短柄收窄，内孔同样有平直边。握环随铲子放地角度自然旋转，保持蓝色、大小、铲柄、矩形铲头、方向和位置，只有一把铲。四颗灰石短河岸加兔右側一颗备用石总共五颗、完成宽圆顶小山、弯曲无水干沙沟、右侧两朋友侧背影与绿围巾和兔白尾、夕阳草地雏菊扁石、透明水彩和棉纸纹全部保留不变。无正文标题、气泡、水、额外肢体、石子或第二工具。"
+    }
+  ]
+}

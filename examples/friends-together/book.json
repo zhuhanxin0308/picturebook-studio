@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "book_id": "friends-together",
+  "title": "一起铺好小毯子",
+  "brief": {"age_range": "3—5岁", "languages": ["zh"], "body_page_count": 8, "theme": "朋友合作完成一次树下野餐", "use": "亲子朗读与屏幕阅读", "delivery": ["pdf", "offline_html"], "generation_tool": "原生 image_gen", "authorization": "用户授权优化三个作品；主线程批准本书八页正文、十图重绘、无字结果页及篮子压左前角的因果修订。"},
+  "format": {"width_mm": 240, "height_mm": 240, "margin_mm": 10, "font_size_pt": 28, "line_spacing": 1.35, "text_ratio": 0.22},
+  "approvals": {
+    "brief": "用户已确认3—5岁、中文单语、每本8页正文加封面封底共10页，PDF和可编辑离线HTML。",
+    "story": "用户授权优化作品；主线程批准急切与谨慎的不同反应、两幅拉角过程、共同慢放、风小后篮子压左前角，第8页无字结果与相挨位置。",
+    "visual": "主线程批准10图重绘、减少背景密度、保留角色固定外观与既有道具；批准positioned及image-only框。"
+  },
+  "visual": {"description": "童真水彩，奶油白棉纸纹、透明色层、柔软自然晕染、少量轻棕铅笔轮廓。身份外观沿用原图；背景为疏朗薄水彩草地与少量雏菊，草纹不铺满，左树与淡绿远景只提供空间。方形场景、横向操作近景及一次两幅连续动作交替。文字留白由各页明确预留，插画无文字、水印或气泡。豆豆谨慎、米米急切通过眼神、重心和前爪动作体现。", "palette": ["#F7F0DF", "#C8E1E8", "#D5AC46", "#D87066", "#A5B58D", "#A77953"], "reference": "references/identity.png"},
+  "characters": {
+    "doudou": {"description": "小棕熊豆豆：暖栗棕毛、圆耳、浅米色椭圆口鼻、黑豆眼、圆肚子。浅蓝色背带短裤，两条背带、两个圆纽扣、前胸小口袋。不穿鞋不加饰品。两只前爪和两只后脚，前爪不画人类手指。体型比米米略大。", "reference": "references/identity.png"},
+    "mimi": {"description": "奶白小兔米米：奶白毛、两只长耳内侧淡粉、黑豆眼、小粉鼻、粉脸颊、圆肚子。只戴一条芥末黄短围巾，两短尾。不穿衣服不穿鞋。两只前爪和两只后脚，前爪不画人类手指。身体比豆豆略矮。", "reference": "references/identity.png"}
+  },
+  "scenes": {
+    "meadow": {"description": "春日平坦草地，左后方宽冠矮树、浅棕树干与鼠尾草绿叶冠，少量白雏菊、淡绿远处树丛，柔和日光。藤篮起初左树旁，之后明确搬到毯子左前角；视角可变但空间连续。疏朗水彩草地和自然奶油纸白。"},
+    "detail": {"description": "同一春日草地近景或俯视，红白格毯与爪的接触清楚。少量左树干或树旁篮提供锚点，背景薄染，不密铺草花。"}
+  },
+  "props": {
+    "blanket": {"description": "一张柔软红白大方格矩形野餐毯，无印字无流苏，足够两位小动物坐下。", "initial_state": "红白格毯整齐折叠在树下草地，完好干净。", "reference": "references/identity.png"},
+    "basket": {"description": "一个天然棕色藤编小提篮，一条圆拱提手，篮内最初有两颗红苹果和三块黄色圆饼干。", "initial_state": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。", "reference": "references/identity.png"},
+    "wind_leaf": {"description": "一片鼠尾草绿椭圆叶，细叶脉短叶柄；只用这一片离树叶追踪风入、落下、静止，不添加多片飘叶。", "initial_state": "一片鼠尾草绿叶尚未飞入画面。"}
+  },
+  "page_order": ["cover", "p01", "p02", "p03", "p04", "p05", "p06", "p07", "p08", "backcover"],
+  "pages": [
+    {
+      "id": "cover", "kind": "cover", "scene_id": "meadow", "character_ids": ["doudou", "mimi"], "depends_on": [],
+      "image": {"path": "images/cover-v4.png", "generator": "image_gen", "references": ["references/identity.png"], "input_fingerprint": "0421d27a956ca673b6173e3eb5d99bbeece5fad25b60b1b6e740c0bbc955b6a8"},
+      "qa": {"input_fingerprint": "0421d27a956ca673b6173e3eb5d99bbeece5fad25b60b1b6e740c0bbc955b6a8", "image_sha256": "2111a5ad9069ef46669451f59dbcc693f995eea3194e26cbd96b9f1dbd54dada", "reviewer": "合作绘本修订代理：实际查看原生新图", "notes": "已实看新封面：熊兔相看、各一爪触折叠毯，另爪自然身旁，身份与蓝裤黄围巾一致；唯一左篮两苹果三饼干可数。上方四分之一干净纸白可排书名，左树未进入标题区；背景仍有水彩草叶但比旧合照疏朗，动作完整、无图中文字。", "checks": {"identity": true, "continuity": true, "text_match": true, "anatomy": true, "style": true, "composition": true}},
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,1], "text_box": [0.07,0.03,0.86,0.22], "allow_overlap": true, "text_align": "center", "font_size_pt": 40, "text_color": "#4E6543", "paper_color": "#FFF9EF"},
+      "purpose": "用伙伴朝向同一张毯子的动作建立合作期待。",
+      "action": "两位弯腰朝向折叠毯，各一爪轻搭两端，互相看一眼。",
+      "visual_evidence": ["两位朝向毯子而非合照", "完整折叠红白格毯", "左树旁篮内两苹果三饼干", "上方书名纸白"],
+      "text": {"zh": "一起铺好\n小毯子"},
+      "continuity": {
+        "blanket": {"before": "红白格毯整齐折叠在树下草地，完好干净。", "after": "红白格毯整齐折叠在树下草地，完好干净。"},
+        "basket": {"before": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。", "after": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。"}
+      },
+      "prompt": "illustration-story；新版封面，3—5岁绘本，方形1:1完整无字插画。附图1锁定豆豆米米身份、服装、篮毯点心及画材，不复制并排合照和密集背景。上方四分之一留纯净奶油纸白供书名，树冠和角色不能进入。下半部左树下，暖栗棕圆耳米色口鼻的小熊豆豆穿浅蓝背带短裤，两背带两圆纽扣胸口袋；奶白长耳粉耳内侧粉鼻的小兔米米只戴芥末黄短围巾，熊略大。熊左兔右，稍弯腰朝向前方完整折叠红白大格毯，每位一爪轻搭毯两端、另一爪在身旁，两后脚落地，互相望一眼而非面对读者合照。左树旁唯一藤编圆拱篮，篮口恰好两红苹果三黄圆饼干可数，未取点心。奶油棉纸透明水彩自然晕染、少量轻棕铅笔轮廓、低饱和浅蓝黄红绿；草地薄染、少量雏菊，不密填花纹。每位两前爪两后脚、无手指，不穿额外衣饰，无离树飘叶。全部主体完整，无文字字母气泡页码标志水印。"
+    },
+    {
+      "id": "p01", "kind": "story", "scene_id": "meadow", "character_ids": ["doudou"], "depends_on": [],
+      "image": {"path":"images/p01-v4.png","generator":"image_gen","references":["references/identity.png"],"input_fingerprint":"e743eaa5eb19df79403d9b046aacb681a0c1aa2f1b92c47bb963bd576c7293c4"},
+      "qa": {"input_fingerprint":"e743eaa5eb19df79403d9b046aacb681a0c1aa2f1b92c47bb963bd576c7293c4","image_sha256":"81fd6c9ef4cda79ad6ee91e747d87465dcd30ba2d6dae56bdeee3a5cb823ddc9","reviewer":"合作绘本修订代理：实际查看原生新图","notes":"已实看修正图：仅豆豆半蹲放折叠毯、侧望右方空草地，前爪触布与后脚自然；左树篮两苹果三饼干仍全在篮内可数，篮外缘靠画幅。右上文字区纸白，熊蓝裤身份正确，无字无兔；草地薄染较旧版疏朗。","checks":{"identity":true,"continuity":true,"text_match":true,"anatomy":true,"style":true,"composition":true}},
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,1], "text_box": [0.53,0.05,0.44,0.30], "allow_overlap": true, "text_align": "left", "font_size_pt": 26, "text_color": "#4E6543", "paper_color": "#FFF9EF"},
+      "purpose": "交代请朋友野餐的愿望，空草地成为等待的位置。",
+      "action": "豆豆刚放好折叠毯，转头看右边朋友将来的空草地。",
+      "visual_evidence": ["豆豆独自出现望右方", "前爪刚离开折叠毯", "树旁篮内两苹果三饼干", "右上纸白文字区"],
+      "text": {"zh": "豆豆带着小毯子，来到树下。\n今天，他要请米米吃点心。"},
+      "continuity": {
+        "blanket": {"before": "红白格毯整齐折叠在树下草地，完好干净。", "after": "红白格毯整齐折叠在树下草地，完好干净。"},
+        "basket": {"before": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。", "after": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。"}
+      },
+      "prompt": "illustration-story；必须重新创作第1正文页，不是封面，不是野餐结尾。此页仅有一只小熊豆豆，绝对没有兔子，没有朋友，没有动物剪影；没有吃或拿食物。附图只是身份与画材参考，不能复制其两位动物。方形1:1完整无字插画。豆豆暖栗棕圆耳米色椭圆口鼻黑豆眼，浅蓝背带短裤两背带两圆纽扣胸口袋、赤脚。豆豆在画面左下半蹲，一只前爪刚把折叠红白格毯放到草地，另一爪近膝，转头侧望右侧空草地，期待米米到来。小毯子必须是一叠厚厚整齐折叠的布，完全没有展开，熊不坐在毯上。唯一藤篮在左后树干旁，篮内恰好两完整红苹果三黄圆饼干，全部仍在篮内，没有任何篮外食物。左侧宽冠矮树部分入画，右侧是一大片空草地，无任何动物。右上x53%—97%、y8%—31%严格是清洁奶油纸白，不画天空云树人物花，供正文排版。用疏朗浅绿薄水彩草地、仅三五朵小雏菊，不铺满草花，奶油棉纸、透明水彩轻晕染、少量棕铅笔轮廓、低饱和蓝黄红绿，沿用身份图熊比例。两前爪两后脚，无人类手指；不要正面合照，不增加饰品，无飘叶，不画任何文字气泡水印页码。"
+    },
+    {
+      "id": "p02", "kind": "story", "scene_id": "detail", "character_ids": ["doudou"], "depends_on": ["p01"],
+      "image": {"path":"images/p02-v4.png","generator":"image_gen","references":["references/identity.png","images/p01-v4.png"],"input_fingerprint":"20ab78cc8b650282254206f54064603b086ae2c2387fd8b32466f983d71d1c8a"},
+      "qa": {"input_fingerprint":"20ab78cc8b650282254206f54064603b086ae2c2387fd8b32466f983d71d1c8a","image_sha256":"643a1de9b4d4e29ee0fd5a0498f6128d9d9676b0c7d29e0668917e1b49410df3","reviewer":"合作绘本修订代理：实际查看原生新图","notes":"已实看：两个纸白分开的连续时刻，左幅同一熊捏左角而右边卷着，右幅熊换到右侧捏右角而左边卷回。每幅一熊一篮一毯，无新增角色；两苹果三饼干均在篮内，左树锚点不变，熊脸衣服一致，爪布接触明确，横幅过程清楚，无字。","checks":{"identity":true,"continuity":true,"text_match":true,"anatomy":true,"style":true,"composition":true}},
+      "presentation": {"layout": "positioned", "image_box": [0.02,0.23,0.94,0.705], "text_box": [0.08,0.02,0.84,0.18], "text_align": "left", "font_size_pt": 28, "text_color": "#4E6543", "paper_color": "#FFF9EF"},
+      "purpose": "两幅连续时刻展示拉开一端、转向另一端后原角卷回的实际过程。",
+      "action": "左幅豆豆拉左角；右幅同一个豆豆转到右侧拉右角，原左角松手后卷回。",
+      "visual_evidence": ["左右两幅清楚分开的连续时刻", "左幅一爪拉开左角", "右幅熊到右侧且左角卷回", "各幅篮都在左树旁且数量一致"],
+      "text": {"zh": "这一角拉开，\n那一角又卷回去了。"},
+      "continuity": {
+        "blanket": {"before": "红白格毯整齐折叠在树下草地，完好干净。", "after": "红白格毯部分展开，豆豆拉住右角，松开的左角卷回。"},
+        "basket": {"before": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。", "after": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。"}
+      },
+      "prompt": "illustration-story；新版第2正文页，横向4:3无字水彩，两幅连续动作小画面从左到右阅读，中央留窄纸白间隔，不能画成同一空间里两个熊。附图1锁豆豆身份衣着道具画材；附图2锁左树篮与折叠毯空间。每幅只同一个暖栗棕圆耳米色口鼻黑豆眼小熊、浅蓝背带短裤两纽扣胸口袋，恰好两前爪两后脚、无手指。左幅是先前时刻：熊蹲毯左侧，一爪拉开左角，另一爪靠膝，一整张红白格毯从折叠部分展开，右侧还卷着，熊认真。右幅是下一时刻：同一熊已移到毯右侧，一爪拉开右角，另一爪近膝，原左角松手后又清楚卷回，熊抬眉疑惑看左角。两幅的衣服和道具一致，各自只有一篮一毯，篮一直左后树旁、篮口恰好两红苹果三黄圆饼干可数，没移动没多食物。熊和卷角足够大，两幅各完整展示手爪布角，不加文字、箭头、数字或气泡。浅绿草地薄染、极少雏菊与部分树干，奶油纸白、透明水彩轻晕染、轻棕轮廓，低饱和蓝黄红绿；没有小兔、无飘叶，不堆草纹，无水印。"
+    },
+    {
+      "id": "p03", "kind": "story", "scene_id": "meadow", "character_ids": ["doudou", "mimi"], "depends_on": ["p02"],
+      "image": {"path":"images/p03-v4.png","generator":"image_gen","references":["references/identity.png","images/p02-v4.png"],"input_fingerprint":"b22b393d831ff94b44e9939b46bfb8a9dde7ee2e4a46bb3831fd29d72e3008d0"},
+      "qa": {"input_fingerprint":"b22b393d831ff94b44e9939b46bfb8a9dde7ee2e4a46bb3831fd29d72e3008d0","image_sha256":"3259792917efc9c4d0060f936596728f3e04d8ce78843e69523ddea3d2dc8efd","reviewer":"合作绘本修订代理：实际查看原生新图","notes":"已实看：左兔两爪急切拉布，右熊抓角而另一爪张开保持平衡，熊惊讶口形与兔兴奋表情不同；同一毯左卷打开而中部斜皱、主体仍贴草地。唯一左篮两苹果三饼干、角色蓝裤黄围巾延续。右上干净纸白，未复制前页双幅；爪脚与接触清楚、无字无飞叶。","checks":{"identity":true,"continuity":true,"text_match":true,"anatomy":true,"style":true,"composition":true}},
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,1], "text_box": [0.57,0.02,0.40,0.19], "allow_overlap": true, "text_align": "left", "font_size_pt": 28, "text_color": "#4E6543", "paper_color": "#FFF9EF"},
+      "purpose": "让米米急切帮助与豆豆谨慎形成差异。",
+      "action": "米米到毯左侧用力拉开卷角，右侧豆豆仍抓着右角，被牵得向前，赶紧稳住后脚。",
+      "visual_evidence": ["兔重心向左后拉", "熊在右抓角前倾", "同一毯中部斜皱显示不同步", "兔兴奋熊吃惊"],
+      "text": {"zh": "“我来啦！”\n米米用力一拉——"},
+      "continuity": {
+        "blanket": {"before": "红白格毯部分展开，豆豆拉住右角，松开的左角卷回。", "after": "红白格毯被两位拉开，左角不再卷，布中部因为不同步而斜皱。"},
+        "basket": {"before": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。", "after": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。"}
+      },
+      "prompt": "illustration-story；新版第3正文页，方形1:1单幅无字动作场景。附图1锁熊兔身份衣服画材；附图2是两个连续时刻，只延续其右幅最终毯状态，不能复制两幅结构，本页恰好一熊一兔。豆豆在毯右边仍抓右角，暖栗棕圆耳米色口鼻浅蓝背带短裤两纽扣口袋，被突然牵得身体向左前倾、一爪抓布另一爪抬起平衡，两后脚仍稳落地，吃惊望兔；米米已经到毯左边，奶白粉内长耳粉鼻黑豆眼、仅芥末黄短围巾，用两前爪抓左布边，重心向左后拉、后脚落地，兴奋急切。左卷被打开，一整张红白大格毯中部斜向皱起、轻微拉紧，仍低于两位腰部，不画吊床飞毯，不跌倒。两位各两前爪两后脚无手指。左后树旁唯一藤篮含恰好两红苹果三黄圆饼干，未搬未吃。右上x57%—97%、y2%—21%干净奶油纸白供正文，耳朵和树冠不能进入。奶油棉纸透明水彩轻晕染少量轻棕线，背景薄染少量雏菊，不复制密草花纹，低饱和蓝黄红绿，无飘叶、无字气泡水印。"
+    },
+    {
+      "id": "p04", "kind": "story", "scene_id": "meadow", "character_ids": ["doudou", "mimi"], "depends_on": ["p03"],
+      "image": {"path":"images/p04-v4.png","generator":"image_gen","references":["references/identity.png","images/p03-v4.png"],"input_fingerprint":"0ee61739d882e44c8af900d1565584c731ba8b08523cb3f1939472f259b2442d"},
+      "qa": {"input_fingerprint":"0ee61739d882e44c8af900d1565584c731ba8b08523cb3f1939472f259b2442d","image_sha256":"b748ad8578aaac5657c0d913a4d4ced5f0a7d345a42c343072b8aa5e846b30c3","reviewer":"合作绘本修订代理：实际查看原生新图","notes":"已实看第4新图：兔左熊右同时蹲低，各两爪握自己一侧布边，布中部贴地、边缘仅轻微抬起，无前页斜皱与猛拉重心。两位相看、表情专注安心，爪布接触明确，完整脸耳脚，篮仍左树旁且两苹果三饼干可数。横图与前方图形成距离变化，无飘叶无字，水彩统一。","checks":{"identity":true,"continuity":true,"text_match":true,"anatomy":true,"style":true,"composition":true}},
+      "presentation": {"layout": "positioned", "image_box": [0,0.24,1,0.75], "text_box": [0.08,0.02,0.84,0.19], "text_align": "left", "font_size_pt": 28, "text_color": "#4E6543", "paper_color": "#FFF9EF"},
+      "purpose": "两位调整节奏，真正一起轻放。",
+      "action": "米米停下来等豆豆，两位一左一右蹲低，同步把布边轻放到草地。",
+      "visual_evidence": ["两位蹲低各握一侧", "布边仅离草地很小距离", "斜皱拉平", "兔认真看熊等待"],
+      "text": {"zh": "“慢一点。”豆豆说。\n这回，他们一起轻轻放。"},
+      "continuity": {
+        "blanket": {"before": "红白格毯被两位拉开，左角不再卷，布中部因为不同步而斜皱。", "after": "红白格毯已完整展开，两位同步把布边轻放，主体贴近草地且斜皱平了。"},
+        "basket": {"before": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。", "after": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。"}
+      },
+      "prompt": "illustration-story；新版第4正文页，横向4:3无字完整侧面中景。附图1锁角色衣服道具水彩；附图2参考猛拉后毯展开的状态，本页放慢配合，换低侧面镜头。兔米米左、熊豆豆右，面对面同时蹲低，各用两前爪握自己一侧红白大格毯边；爪与布接触清楚。一整块矩形布中部平贴草地，两侧边只离地约一爪厚，正在轻轻放下，不能高举成吊床。兔看熊认真等节奏，熊专注安心，两后脚落地。熊暖栗棕圆耳米色口鼻黑豆眼浅蓝背带短裤两纽扣胸口袋；兔奶白粉内长耳粉鼻黑豆眼仅芥末黄短围巾，熊稍大。每位只有两前爪两后脚，不画人类手指。左后树旁一藤篮内恰好两红苹果三黄圆饼干。少量左树和白雏菊、疏朗薄水彩草地、奶油纸白自然边，透明水彩自然晕染棉纸纹轻棕线低饱和蓝黄红绿。无离树飘叶、无文字页码标志水印气泡，脸耳与布爪动作完整。"
+    },
+    {
+      "id": "p05", "kind": "story", "scene_id": "meadow", "character_ids": ["doudou", "mimi"], "depends_on": ["p04"],
+      "image": {"path":"images/p05-v4.png","generator":"image_gen","references":["references/identity.png","images/p06-v3.png"],"input_fingerprint":"a5c57882828f21c4bd3cef8d6681e467cf930061424f45628725fc4734b5d1cd"},
+      "qa": {"input_fingerprint":"a5c57882828f21c4bd3cef8d6681e467cf930061424f45628725fc4734b5d1cd","image_sha256":"f23cd0aedf22fe7c01feacdc444083c0e2099176c462223405911ff18015c2e1","reviewer":"合作绘本修订代理：实际查看原生新图并核对两个前角","notes":"第三候选已实看通过：两位终于在靠观众前角外，兔俯身急切伸爪、熊吃惊一爪伸角另一近胸，未按平；只有两个前角翘，后角平。唯一叶飞在右前角上方，篮留左树且两苹果三饼干可数。留白在右上成立，左上树冠占位，所以文字框移至实际右上纸白；未重画或改正文，角色衣服与水彩一致。","checks":{"identity":true,"continuity":true,"text_match":true,"anatomy":true,"style":true,"composition":true}},
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,1], "text_box": [0.44,0.03,0.54,0.18], "allow_overlap": true, "text_align": "left", "font_size_pt": 28, "text_color": "#4E6543", "paper_color": "#FFF9EF"},
+      "purpose": "风起带来新困难，两个即时反应不同。",
+      "action": "两个前毯角被风吹翘，米米立刻追左角，豆豆一愣后朝右角伸爪。",
+      "visual_evidence": ["两个前角翘起", "兔已弯腰熊刚反应", "黄围巾短尾轻扬", "唯一绿叶从右上飞入"],
+      "text": {"zh": "呼——\n两个毯角又翘起来了！"},
+      "continuity": {
+        "blanket": {"before": "红白格毯已完整展开，两位同步把布边轻放，主体贴近草地且斜皱平了。", "after": "红白格毯主体在草地，左前角与右前角被风吹得翘起。"},
+        "basket": {"before": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。", "after": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。"},
+        "wind_leaf": {"before": "一片鼠尾草绿叶尚未飞入画面。", "after": "唯一鼠尾草绿叶从右上飞入，在右前毯角上方。"}
+      },
+      "prompt": "illustration-story；新版第5正文页，方形1:1无字透明水彩。附图1固定熊兔身份、服装、画材、红白毯与篮中点心；附图2只用来固定正确几何关系：兔在画面左下近处，熊在画面右下近处，毯子从两个前角向画面上方远处延伸。本页不是按住结果，不能复制附图2按平动作。最重要的构图：红白矩形毯位于画面中下部y48%—80%，其靠观众左右两个前角位于y80%；两角色蹲在这两个前角的外侧靠观众位置，兔头约x25%y62%、熊头约x78%y62%，脚到y94%，不要把角色放在毯后边。只有靠观众两个前角被风翘起，远处两个后角平贴地。米米左下已俯身急切追左前角，一爪伸到翘起的角尖上方一小段、没有触布或按平，另一爪向后平衡；豆豆右下刚反应惊讶微张嘴，一爪朝右前角伸但距离稍远，另一爪靠胸，两位反应不同。脸朝角尖的三分之二侧面，完整兔耳熊耳，两位只两前爪两后脚，无人类手指。熊暖栗棕圆耳米色口鼻蓝背带短裤两圆纽扣胸袋；兔奶白粉内长耳粉鼻黑豆眼仅黄短围巾两尾轻扬。唯一篮在左后树旁，内恰好两红苹果三黄圆饼干可数未取。唯一鼠尾草绿椭圆叶在右前角上方飞入，细叶脉短柄，不画其他飘叶。上方25%为纯净奶油纸白，左树冠低于y28%，树只在左后，文字区不能有树云角色或叶。背景薄浅绿水彩，仅极少雏菊草叶，少量轻棕轮廓、奶油棉纸自然晕染低饱和蓝黄红绿，不能复制附图2密集草纹。无文字水印气泡，所有前角与爪在画幅内完整，不能提前按住，不画多格。"
+    },
+    {
+      "id": "p06", "kind": "story", "scene_id": "detail", "character_ids": ["doudou", "mimi"], "depends_on": ["p05"],
+      "image": {"path":"images/p06-v4.png","generator":"image_gen","references":["images/p06-v4-rejected.png","images/p06-v3.png"],"input_fingerprint":"441f4d73742578cb31a62f64cd56c7d2f961a459ac29cf72343a1bf721e817d5"},
+      "qa": {"input_fingerprint":"441f4d73742578cb31a62f64cd56c7d2f961a459ac29cf72343a1bf721e817d5","image_sha256":"6c135dc5bc0a591620f21e97de7175d18e3713c2cc1eb360f12ec95cd3b5af51","reviewer":"合作绘本修订代理：实际查看原生修正图","notes":"已实看修正：兔左熊右靠毯前爪掌面分别压住两前角区域，两角与整个前边完全平展贴地，不再有首图翘角白折线。另一爪各靠身前/膝、后脚落地，彼此认真相看；唯一叶降低到右角近地上方，篮还左树内两苹果三饼干，衣服身份连续，无字。俯视操作距离可看见接触。","checks":{"identity":true,"continuity":true,"text_match":true,"anatomy":true,"style":true,"composition":true}},
+      "presentation": {"layout": "positioned", "image_box": [0.04,0.03,0.92,0.69], "text_box": [0.05,0.80,0.90,0.18], "text_align": "left", "font_size_pt": 28, "text_color": "#4E6543", "paper_color": "#FFF9EF"},
+      "purpose": "近景给出真正按住前角的合作证据，并停下来等待。",
+      "action": "俯视近景中两位各一爪按住一个前角，相看一下，继续按着等风小。",
+      "visual_evidence": ["兔掌面压左前角尖端", "熊掌面压右前角尖端", "角平而爪未离开", "唯一绿叶降低至右边布外"],
+      "text": {"zh": "豆豆按住这边，米米按住那边。\n“先等等。”"},
+      "continuity": {
+        "blanket": {"before": "红白格毯主体在草地，左前角与右前角被风吹得翘起。", "after": "两个前角已被按平，米米按左前角，豆豆按右前角。"},
+        "basket": {"before": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。", "after": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。"},
+        "wind_leaf": {"before": "唯一鼠尾草绿叶从右上飞入，在右前毯角上方。", "after": "唯一鼠尾草绿叶降到右前角外侧草地上方，尚未落地。"}
+      },
+      "prompt": "illustration-story；对附图1第6正文页候选进行精确修正，横向4:3无字水彩。附图1是编辑目标，保持兔左熊右、两位身份服饰脸耳、俯视近景、篮在左树旁、两红苹果三黄圆饼干、唯一右侧椭圆绿叶和奶油棉纸透明水彩。只修正核心按角动作：现在图里的两个靠观众前角还翘着，必须改成已经平展贴草地。左兔靠毯的一只前爪掌面移到最左前角尖端上，角尖就在爪下面，布边平展不能上卷；右熊靠毯的一只前爪掌面移到最右前角尖端上，同样角尖被爪掌覆盖，角不能从爪前方继续翘起。两个接触点清楚可见，爪压在角尖不是内侧布面或草地，一边一位共同按住，另一爪各自然靠膝，两后脚着地。附图2旧页仅参考正确角尖被爪压平的接触几何，不采用其左右熊兔顺序、密草纹或多片叶，目标仍兔左熊右。红白格毯全四角平展、没有白边折回、没有任何翘起角；画面主体与情绪不改，熊兔认真相看等待而非庆祝。唯一鼠尾草绿椭圆叶移到右前角外侧草地非常低的上方，尚未落地，与前页飞入形成下降；不画其他飞叶，不复制附图2多叶。兔奶白长耳粉内侧黄短围巾、熊暖栗棕圆耳米色口鼻蓝背带短裤两纽扣胸袋固定。每位仅两前爪两后脚、无人类手指。背景薄浅绿水彩、极少雏菊，减少密草纹，脸耳爪和布角完整无裁切。无文字数字气泡页码标志水印，不作分格。"
+    },
+    {
+      "id": "p07", "kind": "story", "scene_id": "meadow", "character_ids": ["doudou", "mimi"], "depends_on": ["p06"],
+      "image": {"path":"images/p07-v4.png","generator":"image_gen","references":["images/p07-v4-rejected.png","references/identity.png"],"input_fingerprint":"5a2ab7fa66ab73fed04f856b4becfe356348d746e8949aa84d64082134be9874"},
+      "qa": {"input_fingerprint":"5a2ab7fa66ab73fed04f856b4becfe356348d746e8949aa84d64082134be9874","image_sha256":"5542a293dd82272b2146d6759534026c1180774a7ffc34e63ad81871bfa28cc0","reviewer":"合作绘本修订代理与主线程：双方实际查看原生修正图","notes":"修正图双方实看：熊双爪扶提手，篮底实际压左前部布面，左前角附近露短布边，兔靠布爪压着篮旁左侧斜边；属于按角区域与放篮接续，没有声称精确覆盖角尖。唯一篮内两苹果三饼干，原树旁无篮，黄围巾垂落、唯一叶静止在右前角外草地，风小可见。右上留白、脸耳爪完整，无字，水彩连续。","checks":{"identity":true,"continuity":true,"text_match":true,"anatomy":true,"style":true,"composition":true}},
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,1], "text_box": [0.52,0.03,0.45,0.25], "allow_overlap": true, "text_align": "left", "font_size_pt": 26, "text_color": "#4E6543", "paper_color": "#FFF9EF"},
+      "purpose": "明确风小后搬篮，篮底压住毯角连接等待与结果。",
+      "action": "风小后豆豆离开右角去搬篮，将装有点心的篮子放到左前角上，米米继续按着左前角旁的布边，帮他稳住。",
+      "visual_evidence": ["黄围巾自然垂落", "熊双爪扶提手篮底落左前角", "兔仍一爪按左前角邻近布边", "唯一绿叶已在右前角外落地"],
+      "text": {"zh": "风小了。\n豆豆搬来篮子，米米还按着毯角。"},
+      "continuity": {
+        "blanket": {"before": "两个前角已被按平，米米按左前角，豆豆按右前角。", "after": "风小了，毯子完整平铺，左前角被藤篮压住，米米仍按左前角旁布边。"},
+        "basket": {"before": "藤篮放在树旁草地，内有两颗红苹果和三块黄色圆饼干。", "after": "藤篮已搬到毯子左前角并压在角上，篮内仍有两红苹果三黄圆饼干。"},
+        "wind_leaf": {"before": "唯一鼠尾草绿叶降到右前角外侧草地上方，尚未落地。", "after": "唯一鼠尾草绿叶落在右前角外侧草地，静止。"}
+      },
+      "prompt": "illustration-story；精确修改附图1第7页候选，方形1:1完整无字水彩。附图1是唯一编辑目标，附图2锁定身份衣服画材。保留熊双爪扶篮提手、兔一爪继续按布、两苹果三黄圆饼干都在唯一藤篮内、两位表情与右上纯净奶油文字留白。必须修正两个位置：第一，把篮子向左下靠观众移动，篮底明确覆盖完整红白格毯最左下的角尖，篮底的左下部分正压在这个角尖上，角尖从篮底边缘露出一小片红白布，不是只放在毯左部内侧。篮子须比兔前爪更靠观众，不能离左下角尖一大块布面距离。熊相应稍向左下弯腰，两前爪仍握同一提手，篮底已落在角上，双脚自然；兔也把靠布前爪移到篮底旁露出的同一左下角边缘，掌面按住布，另一爪靠膝。两人不重叠脸，动作与接触清楚。第二，把唯一鼠尾草绿椭圆叶移到最右下前角的外侧下方草地，叶完全在草地上而非毯面，静止、无飞叶风线、无第二片离树叶。红白矩形毯保持完整四角平展，右角也平，篮只一个，原左树旁位置空。熊暖栗棕圆耳米色口鼻蓝背带短裤两纽扣胸袋，兔奶白粉内长耳粉鼻黑豆眼仅黄短围巾，两尾自然垂下显示风小。每位两前爪两后脚，不画人类手指。上方右侧x52%—97%、y3%—28%纯净纸白不可画任何角色树云道具；透明水彩棉纸自然晕染轻棕轮廓低饱和蓝黄红绿，薄草地极少雏菊，不密铺花草。无文字气泡页码标志水印，不新增食物或角色。"
+    },
+    {
+      "id": "p08", "kind": "story", "scene_id": "meadow", "character_ids": ["doudou", "mimi"], "depends_on": ["p07"],
+      "image": {"path":"images/p08-v4.png","generator":"image_gen","references":["references/identity.png","images/p07-v4.png"],"input_fingerprint":"8962947df3665ae6314a28476e8409334bc4105a0d907024bd4ab7ebc23b8bd9"},
+      "qa": {"input_fingerprint":"8962947df3665ae6314a28476e8409334bc4105a0d907024bd4ab7ebc23b8bd9","image_sha256":"54c9185fb1ccc681e62ae1f5106f3191170412a40094539837a86f823b74bc40","reviewer":"合作绘本修订代理：实际查看原生结尾图","notes":"已实看无字结尾：熊左兔右肩膀相挨侧头笑，熊撑在身左的爪与向左腾出的坐位可辨，兔前爪接触中间第三块完整饼干正在摆下；前方恰好两完整红苹果三完整饼干。唯一空篮压在左前角区域，叶静止在右前角外草地；角色服饰四肢自然、脸耳完整，场景树与薄水彩连续，无正文与图中文字。","checks":{"identity":true,"continuity":true,"text_match":true,"anatomy":true,"style":true,"composition":true}},
+      "presentation": {"layout": "image-only", "paper_color": "#FFF9EF"},
+      "purpose": "无字结果页用相挨位置和共同摆点心回应请朋友野餐。",
+      "action": "豆豆在毯后侧向左挪一点给米米留位置，米米靠近坐下并摆中间第三块饼干，两位相看笑。",
+      "visual_evidence": ["相挨坐位与侧头互看", "熊一爪撑布向左腾位", "兔正放第三块饼干", "两完整苹果三完整饼干可数", "空篮压同一左前角、唯一叶静止"],
+      "text": {"zh": ""},
+      "continuity": {
+        "blanket": {"before": "风小了，毯子完整平铺，左前角被藤篮压住，米米仍按左前角旁布边。", "after": "风小了，毯子完整平铺，两位相挨坐下，空藤篮仍压左前角。"},
+        "basket": {"before": "藤篮已搬到毯子左前角并压在角上，篮内仍有两红苹果三黄圆饼干。", "after": "唯一空藤篮仍压毯子左前角，两颗完整红苹果和三块完整黄色圆饼干摆在两位前方与中间。"},
+        "wind_leaf": {"before": "唯一鼠尾草绿叶落在右前角外侧草地，静止。", "after": "唯一鼠尾草绿叶落在右前角外侧草地，静止。"}
+      },
+      "prompt": "illustration-story；新版第8正文页，无字结果页，方形1:1完整水彩。附图1锁两位身份道具画材，附图2锁篮压左前角与右前角外静叶，本页稍后点心已取出。左树和开阔草地，下半一张完整平整红白格毯；熊豆豆左、兔米米右坐在毯后半，肩膀相挨侧头相看笑，不向读者摆拍。豆豆一爪撑在身左毯面、身体稍向左挪给米米留位，另一爪靠膝；米米刚靠近坐下，一爪把第三块完整黄色圆饼干轻放到两人中间、另一爪自然身旁。两完整红苹果在两人前方左右各一颗，三块完整黄圆饼干总共可数：左一右一已放，中间第三块仍与兔爪接触但落在布面，不能咬、折或增加饼干。唯一藤篮空，仍压靠观众左前角区域，与上页同一角，不放中央，篮底压住左前部布面，左角附近留一小段布边。唯一鼠尾草绿椭圆叶静止在右前角外草地。熊暖栗棕圆耳米色口鼻黑豆眼、蓝背带短裤两纽扣胸袋；兔奶白粉内长耳粉鼻黑豆眼仅黄短围巾。每位两前爪两后脚无手指，后脚自然在身前；脸和腾位手势清晰完整。人物大到能读表情，左树淡化、右草地开阔、极少雏菊，无密草纹，透明水彩棉纸自然晕染轻棕轮廓、低饱和蓝黄红绿。整页无字无标题无气泡水印，不预留死板空正文栏，不画额外角色食物餐具。"
+    },
+    {
+      "id": "backcover", "kind": "backcover", "scene_id": "detail", "character_ids": [], "depends_on": ["p08"],
+      "image": {"path":"images/backcover-v4.png","generator":"image_gen","references":["references/identity.png","images/p08-v4.png"],"input_fingerprint":"8f3dd3890f15e8552252f0142d820563e7220e462118835ad7061d0fda9b8d6e"},
+      "qa": {"input_fingerprint":"8f3dd3890f15e8552252f0142d820563e7220e462118835ad7061d0fda9b8d6e","image_sha256":"6d7fa8bfe0565c9c61f54b758bae1c60470173c24aca7f0500644a633a3f68c1","reviewer":"合作绘本修订代理：实际查看原生封底图","notes":"已实看封底：没有角色，肢体项不适用且无意外肢体；唯一空篮在左前角区域压左前部布面，角附近露边，毯上恰好两完整苹果三完整饼干，右前角外唯一绿叶静止草地。上方大片奶油纸白可排封底句，画材与正文连续，物件清晰无图中文字。","checks":{"identity":true,"continuity":true,"text_match":true,"anatomy":true,"style":true,"composition":true}},
+      "presentation": {"layout": "positioned", "image_box": [0,0,1,1], "text_box": [0.10,0.08,0.80,0.16], "allow_overlap": true, "text_align": "center", "font_size_pt": 22, "text_color": "#4E6543", "paper_color": "#FFF9EF"},
+      "purpose": "安静毯子点心小景为读者留一个位置。",
+      "action": "俯看平毯、压角空篮与完整点心，唯一叶停在同一边。",
+      "visual_evidence": ["空篮仍压左前角", "两完整苹果三完整饼干", "右前角外唯一静叶", "上方纸白文字区"],
+      "text": {"zh": "这里，也有你的位置。"},
+      "continuity": {
+        "blanket": {"before": "风小了，毯子完整平铺，两位相挨坐下，空藤篮仍压左前角。", "after": "风小了，毯子完整平铺，两位相挨坐下，空藤篮仍压左前角。"},
+        "basket": {"before": "唯一空藤篮仍压毯子左前角，两颗完整红苹果和三块完整黄色圆饼干摆在两位前方与中间。", "after": "唯一空藤篮仍压毯子左前角，两颗完整红苹果和三块完整黄色圆饼干摆在两位前方与中间。"},
+        "wind_leaf": {"before": "唯一鼠尾草绿叶落在右前角外侧草地，静止。", "after": "唯一鼠尾草绿叶落在右前角外侧草地，静止。"}
+      },
+      "prompt": "illustration-story；新版封底，方形1:1完整无字水彩道具小景，不画动物人物。附图1只参考篮毯点心画材不带入角色；附图2参考最终空篮压左前角、两苹果三完整饼干及右前角外静叶。下半略俯视平整红白大格毯，唯一天然棕空藤篮圆拱提手压在左前角区域，篮底压左前部布面、左角附近露出短布边，不能移中央或草地；毯上两完整红苹果、三完整黄圆饼干，全都易数无咬痕，仍分别在左右和中间，没吃没增食物。右前角外草地一片鼠尾草绿椭圆叶静止，细叶脉短叶柄，不画第二片离树叶。上半大片纯净奶油纸白，x10%—90%、y8%—24%不可出现道具云树草，供封底排字。只少量浅绿薄染和极少草叶白雏菊，不画整树和密集纹样；奶油棉纸透明水彩自然晕染轻棕轮廓，低饱和红绿黄棕，小而安静完整。无动物肢体、无文字字母标志页码水印气泡，不作多格拼贴。"
+    }
+  ]
+}

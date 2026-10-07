@@ -1,0 +1,9 @@
+# 忽略运行缓存、虚拟环境和本地密钥，保留公开实例与交付文件。
+__pycache__/
+*.pyc
+.coverage*
+coverage.json
+.venv/
+.env
+.env.*
+*.log
